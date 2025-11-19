@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Platform - SPA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">CoursePlatform</div>
+        <nav>
+            <a data-target="home" class="active">Home</a>
+            <a data-target="courses">Courses</a>
+            <a data-target="categories">Categories</a>
+            <a data-target="about">About</a>
+            <a data-target="blog">Blog</a>
+            <a data-target="login">Login</a>
+            <a data-target="contact">Contact</a>
+        </nav>
+        <button id="darkModeBtn">Dark Mode</button>
+    </div>
+</header>
+
+<main>
+    <!-- Home -->
+    <section id="home" class="active">
+        <div class="hero">
+            <h1>Learn New Skills Online</h1>
+            <p>Join thousands of learners and start your journey today!</p>
+            <a class="btn" data-target="courses">Browse Courses</a>
+        </div>
+        <h2 style="text-align:center; margin-top:40px;">Featured Courses</h2>
+        <div class="cards">
+            <div class="card"><h3>Web Development</h3><p>HTML, CSS, JS from scratch</p><a class="btn-small" data-target="course-details">View Course</a></div>
+            <div class="card"><h3>Data Science</h3><p>Python, Pandas, ML basics</p><a class="btn-small" data-target="course-details">View Course</a></div>
+            <div class="card"><h3>UI/UX Design</h3><p>Design beautiful interfaces</p><a class="btn-small" data-target="course-details">View Course</a></div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+        <h1>All Courses</h1>
+        <input type="text" id="searchBox" placeholder="Search courses...">
+        <div class="cards">
+            <div class="card"><h3>Web Development</h3><p>Learn HTML, CSS, and JS</p><a class="btn-small" data-target="course-details">View Course</a></div>
+            <div class="card"><h3>Data Science</h3><p>Python, Pandas, ML basics</p><a class="btn-small" data-target="course-details">View Course</a></div>
+            <div class="card"><h3>UI/UX Design</h3><p>Design beautiful interfaces</p><a class="btn-small" data-target="course-details">View Course</a></div>
+            <div class="card"><h3>Digital Marketing</h3><p>SEO, Social Media</p><a class="btn-small" data-target="course-details">View Course</a></div>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section id="course-details">
+        <h1>Course Details</h1>
+        <p>Learn step by step with our professional courses.</p>
+        <ul>
+            <li>Lesson 1: Introduction</li>
+            <li>Lesson 2: Intermediate</li>
+            <li>Lesson 3: Advanced</li>
+        </ul>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h1>Categories</h1>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Science</li>
+            <li>Design</li>
+            <li>Business</li>
+        </ul>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We provide high-quality online courses to help you grow your skills.</p>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h1>Blog</h1>
+        <ul>
+            <li>5 Tips to Learn Faster</li>
+            <li>Top 10 Web Development Resources</li>
+        </ul>
+    </section>
+
+    <!-- Login -->
+    <section id="login">
+        <h1>Login</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Course Platform. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
